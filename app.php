@@ -4,4 +4,4 @@ require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'a
 
 use Symfony\Component\Console\Application;
 
-
+asd
