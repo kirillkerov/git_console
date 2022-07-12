@@ -25,15 +25,15 @@ class GetUserCommand extends Command
 
         $helper = $this->getHelper('question');
 
-        $questionName = new Question('Р’РІРµРґРёС‚Рµ РІР°С€Рµ РёРјСЏ: ');
+        $questionName = new Question('Введите ваше имя: ');
         $name = $helper->ask($input, $output, $questionName);
 
-        $questionAge = new Question('Р’РІРµРґРёС‚Рµ РІР°С€ РІРѕР·СЂР°СЃС‚: ');
+        $questionAge = new Question('Введите ваш возраст: ');
         $age = $helper->ask($input, $output, $questionAge);
 
         $question = new ChoiceQuestion(
-            'Р’Р°С€ РїРѕР» (Рј):',
-            ['Рј', 'Р¶'],
+            'Ваш пол (м):',
+            ['м', 'ж'],
             0
         );
         $question->setErrorMessage('РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІС‹Р±РѕСЂ!');

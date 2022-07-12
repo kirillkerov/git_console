@@ -23,7 +23,7 @@ class HelloCommand extends Command
     public function execute(InputInterface $input, OutputInterface $output): int
     {
         // retrieve the argument value using getArgument()
-        $output->writeln('РџСЂРёРІРµС‚, '.$input->getArgument('name'));
+        $output->writeln('Привет, '.$input->getArgument('name'));
 
         return Command::SUCCESS;
     }
