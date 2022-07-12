@@ -36,11 +36,11 @@ class GetUserCommand extends Command
             ['м', 'ж'],
             0
         );
-        $question->setErrorMessage('РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІС‹Р±РѕСЂ!');
+        $question->setErrorMessage('Некорректный выбор!');
 
 
         $color = $helper->ask($input, $output, $question);
-        $output->writeln('Р—РґСЂР°РІСЃС‚РІСѓР№С‚Рµ, ' . $name . '! Р’Р°С€ РІРѕР·СЂР°СЃС‚: ' . $age . ', РІР°С€ РїРѕР»: ' . $color);
+        $output->writeln('Здравствуйте, ' . $name . '! Ваш возраст: ' . $age . ', ваш пол: ' . $color);
 
         return Command::SUCCESS;
 
